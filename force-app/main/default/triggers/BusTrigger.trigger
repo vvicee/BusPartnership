@@ -1,5 +1,4 @@
 trigger BusTrigger on Bus__c (before insert, before update) {
-
     for(Bus__c bus: Trigger.new) { 
         if (bus.Type__c == 'Depot') { 
         //   System.debug(bus.Account__r.Placement__c);
